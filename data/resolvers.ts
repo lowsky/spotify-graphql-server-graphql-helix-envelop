@@ -1,8 +1,8 @@
 import fetch from "node-fetch";
 
-import client_credentials from "./client_credentials.js";
+import client_credentials from "./client_credentials";
 
-function errorMsg (error) {
+function errorMsg (error: Error& {status?:string}) {
     if (error) {
         const { status = '', message = 'no details' } = error;
         return `Error: ${status}: ${message}`;
@@ -10,7 +10,7 @@ function errorMsg (error) {
     return 'An unknown error!'
 }
 
-function throwExceptionOnError (data) {
+function throwExceptionOnError<TDATA>(data: { error?:Error }) {
     if (data.error) {
         throw new Error(errorMsg(data.error));
     }
@@ -20,10 +20,11 @@ const headers = {
     'Accept': 'application/json',
     'Authorization': ''
 };
-let awaitingAuthorization;
+
+let awaitingAuthorization: Promise<string>|undefined = undefined;
 
 // const spotifyProxy = async ()  => {
-const spotifyProxy = () => {
+const spotifyProxy = () : Promise<string> => {
     if (awaitingAuthorization && !client_credentials.isExpired()) {
         // use existing promise, if not expired
         return awaitingAuthorization;
@@ -33,7 +34,7 @@ const spotifyProxy = () => {
             client_credentials.authenticate()
                 .then((token) => {
                     headers.Authorization = 'Bearer ' + token.access_token;
-                    resolve(headers);
+                    resolve(token.access_token);
                 })
                 .catch((err) => {
                     reject(err);
@@ -44,47 +45,57 @@ const spotifyProxy = () => {
 };
 
 const haveHeadersWithAuthToken = async () => {
-    return await spotifyProxy()
+    await spotifyProxy()
+    return headers;
 };
 
 
-export const fetchArtistsByName = async (name) => {
+export const fetchArtistsByName = async (name: string) => {
     console.log(`debug: query artist ${name} `);
 
     const response = await fetch(`https://api.spotify.com/v1/search?q=${name}&type=artist`, {
         headers: await haveHeadersWithAuthToken()
     });
-    const data = await response.json();
+    const data = await response.json() as {
+        error?: Error, artists: { items: [object] }
+        };
     throwExceptionOnError(data);
 
     return (data.artists.items || [])
-        .map(artistRaw => spotifyJsonToArtist(artistRaw));
+    // @ts-ignore
+        .map((artistRaw:object) => spotifyJsonToArtist(artistRaw));
 };
 
-export const fetchAlbumsOfArtist = async (artistId) => {
+export const fetchAlbumsOfArtist = async (artistId:string, limit:number) => {
     console.log(`debug: query albums of artist ${artistId} `);
 
     const response = await fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
         headers: await haveHeadersWithAuthToken()
     });
-    const data = await response.json();
+    const data = await response.json() as {
+        items: [object],
+        error?: Error
+    };
     throwExceptionOnError(data);
 
     return (data.items || [])
-        .map(albumRaw => spotifyJsonToAlbum(albumRaw));
+        .map((albumRaw:object) => spotifyJsonToAlbum(albumRaw));
 };
 
-const spotifyJsonToArtist = async (raw) => {
+const spotifyJsonToArtist = async (raw:object&{
+    images: [{url:string}]
+    id:string
+}) => {
     return {
         // fills with raw data (by ES6 spread operator):
         ...raw,
 
         // This needs extra logic: defaults to an empty string, if there is no image
         // else: just takes URL of the first image
-        image: raw.images[0] ? raw.images[0].url : '',
+        image: raw.images[0]?.url ?? '',
 
         // .. needs to fetch the artist's albums:
-        albums: (args) => {
+        albums: (args:any) => {
             // this is similar to fetchArtistsByName()
             // returns a Promise which gets resolved asynchronously !
             const artistId = raw.id;
@@ -94,14 +105,16 @@ const spotifyJsonToArtist = async (raw) => {
     };
 };
 
-const spotifyJsonToAlbum = (albumRaw) => {
+const spotifyJsonToAlbum = (albumRaw: object & {
+    images?: [{ url?:string }]
+}) => {
     return {
         // fills with raw data (by ES6 spread operator):
         ...albumRaw,
 
         // This needs extra logic: defaults to an empty string, if there is no image
         // else: just takes URL of the first image
-        image: albumRaw.images[0] ? albumRaw.images[0].url : '',
+        image: albumRaw?.images?.[0]?.url ?? '',
 
         tracks: [] // TODO implement fetching of tracks of album
     };

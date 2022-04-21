@@ -1,6 +1,7 @@
+// @ts-expect-error TS2792: Cannot find module 'graphql'.
 import { mockServer } from "@graphql-tools/mock";
 
-import { schema } from "../data/schema.mjs";
+import { schema } from "../data/schema";
 
 let cnt = 0;
 
@@ -26,8 +27,8 @@ const result = simpleMockServer.query(`{
     }
 }`);
 
-result.then(data => {
-    console.log('data: ', JSON.stringify(data, '  ', 1));
-}).catch(error => {
+result.then((data:any) => {
+    console.log('data: ', JSON.stringify(data, null, 1));
+}).catch((error:Error) => {
     console.log('error: ', error);
 });

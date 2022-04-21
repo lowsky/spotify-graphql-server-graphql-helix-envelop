@@ -1,12 +1,5 @@
-/**
- * Module dependencies.
- */
-import dotenv from "dotenv/config";
-import debug0 from "debug";
+import app from "./app";
 
-const debug = debug0('spot-graphql-server:server');
-
-import app from "./app.mjs";
 /**
  * Get port from environment and store in Express.
  */
@@ -25,7 +18,7 @@ app.listen(port, () => {
  * Event listener for HTTP server "error" event.
  */
 
-function onError(error) {
+function onError(error:any) {
   if (error.syscall !== 'listen') {
     throw error;
   }

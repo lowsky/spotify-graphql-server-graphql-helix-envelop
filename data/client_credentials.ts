@@ -11,11 +11,6 @@
 
 import fetch from "node-fetch";
 
-import { config } from "dotenv";
-
-config();
-// load secrets from .env file and store in process.env
-
 const {
     CLIENT_ID = 'invalid',
     CLIENT_SECRET = 'invalid'
@@ -30,6 +25,11 @@ const authOptions = {
 //
 let expireTime = 0;
 
+type TOKEN = {
+    access_token: string
+    expires_in: string
+};
+
 export default {
     isExpired: () => {
         if(expireTime) {
@@ -37,7 +37,7 @@ export default {
         }
         return false;
     },
-    authenticate: () => {
+    authenticate: async (): Promise<TOKEN> => {
         const options = {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
@@ -50,9 +50,9 @@ export default {
 
         return fetch(authOptions.url, options)
             .then((response) => {
-                return response.json();
+                return response.json() as Promise<TOKEN>;
             })
-            .then(token => {
+            .then((token) => {
                 const time = Date.now();
                 const expires_in = Number.parseInt(token.expires_in, 10);
 
