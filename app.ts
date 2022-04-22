@@ -1,10 +1,7 @@
 import express from "express";
 import path from "path";
 import logger from "morgan";
-import cookieParser from "cookie-parser";
-import bodyParser from "body-parser";
 import cors from "cors";
-import { NextFunction, Request, Response } from "express-serve-static-core";
 
 import { getGraphQLParameters, processRequest, renderGraphiQL, sendResult, shouldRenderGraphiQL } from "graphql-helix";
 import { envelop, useSchema, useLogger } from "@envelop/core"
@@ -21,9 +18,7 @@ const getEnveloped = envelop({
 const app = express();
 
 app.use(logger('dev'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(express.json());
 app.use(express.static(path.join('.', 'public')));
 
 const rootValue = {
@@ -65,42 +60,5 @@ app.use('/graphql', cors(), async function (req, res) {
     await sendResult(result, res);
   }
 );
-
-
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  const err = new Error('Not Found');
-  // @ts-ignore
-  err.status = 404;
-  next(err);
-});
-
-// error handlers
-
-// development error handler
-// will print stacktrace
-if (app.get('env') === 'development') {
-  app.use(function (err: any, req: Request, res: Response, next: NextFunction) {
-    console.log(err)
-    res.status(err.status || 500);
-    res.send(`Sorry, there was this error: ` + `
-      <h1>${err.message}</h1>
-      <h2>${err.status}</h2>
-      <pre>${err.stack}</pre>
-  `);
-
-  });
-}
-
-// production error handler
-// no stack-traces leaked to user
-app.use(function (err: any, req: Request, res: Response, next: NextFunction) {
-  res.status(err.status || 500);
-  res.send(`Sorry, there was this error: ` + `
-  <h1>${err.message}</h1>
-  <h2>${err.status}</h2>
-  <pre>${err.stack}</pre>
-  `);
-});
 
 export default app;
