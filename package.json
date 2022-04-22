@@ -18,6 +18,7 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
+    "@envelop/core": "^2.3.1",
     "@graphql-tools/mock": "8.6.8",
     "@snyk/protect": "1.908.0",
     "body-parser": "1.20.0",
@@ -28,6 +29,7 @@
     "express": "4.17.3",
     "express-graphql": "0.12.0",
     "graphql": "16.3.0",
+    "graphql-helix": "^1.12.0",
     "morgan": "1.10.0",
     "node-fetch": "2.6.7",
     "sass": "1.50.1",
