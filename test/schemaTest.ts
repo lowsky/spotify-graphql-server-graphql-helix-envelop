@@ -1,4 +1,3 @@
-// @ts-expect-error TS2792: Cannot find module 'graphql'.
 import { mockServer } from "@graphql-tools/mock";
 
 import { schema } from "../data/schema";
