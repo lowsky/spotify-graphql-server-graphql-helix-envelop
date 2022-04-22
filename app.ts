@@ -11,7 +11,7 @@ import { fetchArtistsByName } from "./data/resolvers";
 
 const getEnveloped = envelop({
   enableInternalTracing:true,
-  plugins: [useSchema(schema), useLogger() ]
+  plugins: [useSchema(schema), ]
 })
 
 
