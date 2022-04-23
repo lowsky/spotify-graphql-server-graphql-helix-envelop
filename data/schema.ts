@@ -1,6 +1,8 @@
-import { buildSchema } from "graphql";
+import { makeExecutableSchema } from "@graphql-tools/schema"
 
-export const schema = buildSchema(`
+import { fetchAlbumsOfArtist, fetchArtistsByName } from "./resolvers";
+
+export const typeDefs = `
 # The root of all queries:
 directive @defer(if: Boolean, label: String) on FRAGMENT_SPREAD | INLINE_FRAGMENT
 
@@ -27,4 +29,18 @@ type Track {
   preview_url: String
   id: ID
 }
-`);
+`;
+
+export const resolvers = {
+  Query: {
+    hi: () => 'Hello Hello Hello',
+    queryArtists: async (_parent:any, { byName }: { byName: string }) => fetchArtistsByName(byName)
+  },
+  Artist: {
+    albums: async (parent: { id: string }) => {
+      return fetchAlbumsOfArtist(parent.id);
+    }
+  }
+};
+
+export const schema = makeExecutableSchema({typeDefs, resolvers});

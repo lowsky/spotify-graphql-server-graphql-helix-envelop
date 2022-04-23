@@ -66,7 +66,7 @@ export const fetchArtistsByName = async (name: string) => {
         .map((artistRaw:object) => spotifyJsonToArtist(artistRaw));
 };
 
-export const fetchAlbumsOfArtist = async (artistId:string, limit:number) => {
+export const fetchAlbumsOfArtist = async (artistId:string, limit?:number) => {
     console.log(`debug: query albums of artist ${artistId} `);
 
     const response = await fetch(`https://api.spotify.com/v1/artists/${artistId}/albums`, {
@@ -93,15 +93,6 @@ const spotifyJsonToArtist = async (raw:object&{
         // This needs extra logic: defaults to an empty string, if there is no image
         // else: just takes URL of the first image
         image: raw.images[0]?.url ?? '',
-
-        // .. needs to fetch the artist's albums:
-        albums: (args:any) => {
-            // this is similar to fetchArtistsByName()
-            // returns a Promise which gets resolved asynchronously !
-            const artistId = raw.id;
-            const { limit=1 } = args;
-            return fetchAlbumsOfArtist(artistId, limit);
-        }
     };
 };
 

@@ -55,7 +55,6 @@ app.use('/graphql', cors(), async function (req, res) {
       operationName,
       query,
       variables,
-      rootValueFactory: () => rootValue,
       request,
       schema,
     })
