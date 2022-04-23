@@ -30,7 +30,7 @@ const rootValue = {
 
 // @ts-expect-error TS2769: No overload matches this call.
 app.use('/graphql', cors(), async function (req, res) {
-    const {schema} = getEnveloped({
+    const {parse, validate, contextFactory, execute, schema} = getEnveloped({
       req
     })
     const request = {
@@ -49,6 +49,11 @@ app.use('/graphql', cors(), async function (req, res) {
     }
 
     const result = await processRequest({
+      parse,
+      validate,
+      execute,
+      contextFactory,
+
       operationName,
       query,
       variables,

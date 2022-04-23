@@ -2,6 +2,7 @@ import { buildSchema } from "graphql";
 
 export const schema = buildSchema(`
 # The root of all queries:
+directive @defer(if: Boolean, label: String) on FRAGMENT_SPREAD | INLINE_FRAGMENT
 
 type Query {
   # Just returns "Hello world!"
