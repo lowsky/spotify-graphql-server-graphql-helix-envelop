@@ -1,6 +1,5 @@
 import express from "express";
 import path from "path";
-import logger from "morgan";
 import cors from "cors";
 
 import { getGraphQLParameters, processRequest, renderGraphiQL, sendResult, shouldRenderGraphiQL } from "graphql-helix";
@@ -17,7 +16,6 @@ const getEnveloped = envelop({
 
 const app = express();
 
-app.use(logger('dev'));
 app.use(express.json());
 app.use(express.static(path.join('.', 'public')));
 
