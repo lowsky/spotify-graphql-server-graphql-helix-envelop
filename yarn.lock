@@ -49,10 +49,10 @@
   dependencies:
     tslib "~2.3.0"
 
-"@snyk/protect@1.908.0":
-  version "1.908.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.908.0.tgz#ddfaca59db5675d4b01b35e3e127db56399e8a2a"
-  integrity sha512-dmaiims0zw2v8xwCDH8f4TprIof8Y5B02dH9/s8RGxfmuVAuT940ty7sIz0FElFkm5HmaXy0Q4mNxulhpkkcwg==
+"@snyk/protect@1.922.0":
+  version "1.922.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.922.0.tgz#3d56da55f0f0a0bc7e5a8811c4a315bea9d77830"
+  integrity sha512-DC6LJu3wfLW9T5LZou++HlIXIhQzIwFWJ7zA5iBIn0i5UQHzsIJU6r9msAhT7YE45WEeBidsNAQXbxolkGBxyg==
 
 "@types/body-parser@*":
   version "1.19.2"
