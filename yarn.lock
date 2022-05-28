@@ -461,10 +461,10 @@ graphql-helix@^1.12.0:
   resolved "https://registry.yarnpkg.com/graphql-helix/-/graphql-helix-1.12.0.tgz#8a81e7c84489a0c6da968afdb54f9a979512baf9"
   integrity sha512-wTu1m/ZFBCgzLPCg/dHO4cNy9JR5Sq/3RqDVblqrU3b/Yem7EXZtQMzG045tHqkCdbgcgQl+kIkXDur1yLfdtw==
 
-graphql@16.1.0-experimental-stream-defer.6:
-  version "16.1.0-experimental-stream-defer.6"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.1.0-experimental-stream-defer.6.tgz#8f00e27b11cf2c71ddec0350c663270cd3230659"
-  integrity sha512-qNedUtVDai94Ptxz7IXHoQR/GU27cuC/SfAU2CogIEfOflr7tW52GTnAF9SDa2i8gneowK0Ye5vyeQUJpGRvAQ==
+graphql@16.4.0:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-16.4.0.tgz#bb10b1b4683045dedcb67000eb4ad134a36c59e6"
+  integrity sha512-tYDNcRvKCcfHREZYje3v33NSrSD/ZpbWWdPtBtUUuXx9NCo/2QDxYzNqCnMvfsrnbwRpEHMovVrPu/ERoLrIRg==
 
 has@^1.0.3:
   version "1.0.3"
