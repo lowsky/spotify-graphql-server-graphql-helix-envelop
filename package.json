@@ -24,7 +24,7 @@
     "cors": "2.8.5",
     "dotenv": "16.0.1",
     "express": "4.18.1",
-    "graphql": "16.1.0-experimental-stream-defer.6",
+    "graphql": "16.5.0",
     "graphql-helix": "^1.12.0",
     "node-fetch": "2.6.7",
     "sass": "1.52.1",
