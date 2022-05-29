@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@envelop/core@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.npmjs.org/@envelop/core/-/core-2.3.1.tgz"
-  integrity sha512-AnYUci7EGyA8flml881lDvVDl6n/u6GQpVIOTsZVO29d4/rPqSJ2KFguDD3mjDL406doTTLNuDI4ndxfJl6fmQ==
+"@envelop/core@2.3.2":
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-2.3.2.tgz#b5cc5a2f7a3c0ea4ac2492589190bb19c6126ca0"
+  integrity sha512-NTVY7bajznZyE0S/yzwIu5aimcM8JLqdeWkWUmwmrAHZdE6zjrvOuVCwq1kMIHzgV3bmLdPg2F7534Nxad/HLg==
   dependencies:
     "@envelop/types" "2.2.0"
 
