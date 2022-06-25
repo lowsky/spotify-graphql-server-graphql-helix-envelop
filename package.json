@@ -18,7 +18,7 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "@envelop/core": "2.3.2",
+    "@envelop/core": "2.3.3",
     "@graphql-tools/mock": "8.6.11",
     "@snyk/protect": "1.940.0",
     "cors": "2.8.5",
