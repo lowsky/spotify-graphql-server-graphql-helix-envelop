@@ -9,17 +9,17 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@envelop/core@2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-2.3.2.tgz#b5cc5a2f7a3c0ea4ac2492589190bb19c6126ca0"
-  integrity sha512-NTVY7bajznZyE0S/yzwIu5aimcM8JLqdeWkWUmwmrAHZdE6zjrvOuVCwq1kMIHzgV3bmLdPg2F7534Nxad/HLg==
+"@envelop/core@2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-2.3.3.tgz#a77b28930b3090e2eb1ecb4696ffd6e4bdc4ddba"
+  integrity sha512-ZWlBXTd35Uwp4cKRsU36NqgpSwXAIe34tXHWUjI7n/TDgOZ0hcgvhQ+nF1dGLsJted0gqnfVX8ZceX30lTGgDg==
   dependencies:
-    "@envelop/types" "2.2.0"
+    "@envelop/types" "2.2.1"
 
-"@envelop/types@2.2.0":
-  version "2.2.0"
-  resolved "https://registry.npmjs.org/@envelop/types/-/types-2.2.0.tgz"
-  integrity sha512-Lghvfs0kh53G5mUKpCMlB/FhHh3O8SSR4hewB7JyE9hOEu/9h/6u+GHH/OEgdaRHky1Sae5Jf4grO+h21ka4ig==
+"@envelop/types@2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@envelop/types/-/types-2.2.1.tgz#5c2e3ae04837533521d0800e7dfa4c3f86f70c4c"
+  integrity sha512-TONrQ8a2/y0emVhdIRhAJzqCXWtaTBLv+JnYVmihR9Iw8ETyVbZOuReB9EuSGZHciKtpkQXTjD/gq5wVMIa47g==
 
 "@graphql-tools/merge@8.2.13":
   version "8.2.13"
@@ -74,10 +74,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@snyk/protect@1.940.0":
-  version "1.940.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.940.0.tgz#1a5cba0197dd7b918d0fa3d6880f1ace53c04aba"
-  integrity sha512-vAhtQ0riui/948ce47WEB0FgJx3eKHMkkyU48MQJij49eLFKaCUiz/gzXiR4nm5O8najwjLa3q6dtLhqm8RI8A==
+"@snyk/protect@1.941.0":
+  version "1.941.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.941.0.tgz#6004d153f47e3a82303f16b1d2772eb0111bccc9"
+  integrity sha512-8pL8DfoNpRqYu7hcQt15BzH3s4x2loh0Sc8v/LlhvqP+NruamnJlRY1FSZ+buUnxgmaAaZzaBQ0XXPJCx/Wz9g==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.8"
@@ -850,10 +850,10 @@ safe-buffer@5.2.1:
   resolved "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass@1.52.1:
-  version "1.52.1"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.52.1.tgz#554693da808543031f9423911d62c60a1acf7889"
-  integrity sha512-fSzYTbr7z8oQnVJ3Acp9hV80dM1fkMN7mSD/25mpcct9F7FPBMOI8krEYALgU1aZoqGhQNhTPsuSmxjnIvAm4Q==
+sass@1.52.2:
+  version "1.52.2"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.52.2.tgz#cd1f03e0e7be5bb2cebcf1c34d735f087d790936"
+  integrity sha512-mfHB2VSeFS7sZlPv9YohB9GB7yWIgQNTGniQwfQ04EoQN0wsQEv7SwpCwy/x48Af+Z3vDeFXz+iuXM3HK/phZQ==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
@@ -1015,10 +1015,10 @@ type-is@~1.6.18:
     media-typer "0.3.0"
     mime-types "~2.1.24"
 
-typescript@4.7.2:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.2.tgz#1f9aa2ceb9af87cca227813b4310fff0b51593c4"
-  integrity sha512-Mamb1iX2FDUpcTRzltPxgWMKy3fhg0TN378ylbktPGPK/99KbDtMQ4W1hwgsbPAsG3a0xKa1vmw4VKZQbkvz5A==
+typescript@4.7.3:
+  version "4.7.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.7.3.tgz#8364b502d5257b540f9de4c40be84c98e23a129d"
+  integrity sha512-WOkT3XYvrpXx4vMMqlD+8R8R37fZkjyLGlxavMc4iB8lrl8L0DeTcHbYgw/v0N/z9wAFsgBhcsF0ruoySS22mA==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"

@@ -18,18 +18,18 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "@envelop/core": "2.3.2",
+    "@envelop/core": "2.3.3",
     "@graphql-tools/mock": "8.6.11",
-    "@snyk/protect": "1.940.0",
+    "@snyk/protect": "1.941.0",
     "cors": "2.8.5",
     "dotenv": "16.0.1",
     "express": "4.18.1",
     "graphql": "16.5.0",
     "graphql-helix": "1.12.0",
     "node-fetch": "3.2.5",
-    "sass": "1.52.1",
+    "sass": "1.52.2",
     "ts-node-dev": "2.0.0",
-    "typescript": "4.7.2"
+    "typescript": "4.7.3"
   },
   "devDependencies": {
     "@types/cors": "2.8.12",
