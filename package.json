@@ -22,7 +22,7 @@
     "@graphql-tools/mock": "8.7.3",
     "@snyk/protect": "1.988.0",
     "cors": "2.8.5",
-    "dotenv": "16.0.1",
+    "dotenv": "16.0.2",
     "express": "4.18.1",
     "graphql": "16.6.0",
     "graphql-helix": "1.13.0",
