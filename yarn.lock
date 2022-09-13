@@ -77,10 +77,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@snyk/protect@1.1004.0":
-  version "1.1004.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1004.0.tgz#755f235f1ae0631521b0fbd89be248ba53e7e51e"
-  integrity sha512-ftWkGaLd0TeZBOchEYkM0onl8xwndnrSMspd5H0DGNFJNwcualfTkM15hyAZfZocb21jxMs8Rh4wyZ6SdBvE1g==
+"@snyk/protect@1.989.0":
+  version "1.989.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.989.0.tgz#fd0b67e1f4c95b5f77ead1d1e8c87a1430f8e5b2"
+  integrity sha512-3s0OEw0zHYK0wK1i2pkbXhAxBp2Z8PxiHGezyX06JSZOW4/BLMRqhmPSaT0U5ox+sfcyWfmIqSu39AzsGPBwcw==
 
 "@tsconfig/node10@^1.0.7":
   version "1.0.8"
