@@ -20,7 +20,7 @@
   "dependencies": {
     "@envelop/core": "2.6.0",
     "@graphql-tools/mock": "8.7.6",
-    "@snyk/protect": "1.989.0",
+    "@snyk/protect": "1.1005.0",
     "cors": "2.8.5",
     "dotenv": "16.0.2",
     "express": "4.18.1",
