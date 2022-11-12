@@ -1,12 +1,16 @@
 import { getGraphQLParameters, processRequest, renderGraphiQL, sendResult, shouldRenderGraphiQL } from "graphql-helix";
-import { envelop, useSchema } from "@envelop/core"
+import { envelop, useEngine, useSchema } from "@envelop/core"
 import type { VercelRequest, VercelResponse } from '@vercel/node';
+import { execute, parse, subscribe, validate } from 'graphql';
 
 import {schema} from "../data/schema";
 
 const getEnveloped = envelop({
-    enableInternalTracing:true,
-    plugins: [useSchema(schema), ]
+    enableInternalTracing: true,
+    plugins: [
+        useSchema(schema),
+        useEngine({ parse, validate, execute, subscribe })
+    ],
 })
 
 export default async (request: VercelRequest, response: VercelResponse) => {
