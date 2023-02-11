@@ -3,14 +3,18 @@ import path from "path";
 import cors from "cors";
 
 import { getGraphQLParameters, processRequest, renderGraphiQL, sendResult, shouldRenderGraphiQL } from "graphql-helix";
-import { envelop, useSchema, useLogger } from "@envelop/core"
+import { envelop, useEngine, useSchema } from "@envelop/core"
+import { execute, parse, subscribe, validate } from 'graphql';
 
 import {schema} from "./data/schema";
 import { fetchArtistsByName } from "./data/resolvers";
 
 const getEnveloped = envelop({
-  enableInternalTracing:true,
-  plugins: [useSchema(schema), ]
+  enableInternalTracing: true,
+  plugins: [
+    useSchema(schema),
+    useEngine({ parse, validate, execute, subscribe })
+  ],
 })
 
 
@@ -26,25 +30,26 @@ const rootValue = {
 
 // API middleware
 
-// @ts-expect-error TS2769: No overload matches this call.
-app.use('/graphql', cors(), async function (req, res) {
-    const {parse, validate, contextFactory, execute, schema} = getEnveloped({
-      req
-    })
+app.use('/api/graphql', cors(), async function (req, res) {
     const request = {
       body: req.body,
       headers: req.headers,
       method: req.method,
       query: req.query
     }
-    const {operationName, query, variables} = getGraphQLParameters(request)
 
     // Determine whether we should render GraphiQL instead of returning an API response
     if (shouldRenderGraphiQL(request)) {
       res.header("Content-Type", "text/html");
-      res.send(renderGraphiQL());
+      res.send(renderGraphiQL({
+        endpoint: '/api/graphql',
+      }));
       return;
     }
+
+    const {parse, validate, contextFactory, execute, schema} = getEnveloped({})
+
+    const {operationName, query, variables} = getGraphQLParameters(request)
 
     const result = await processRequest({
       parse,

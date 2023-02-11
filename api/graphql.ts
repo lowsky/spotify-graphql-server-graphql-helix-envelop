@@ -1,6 +1,7 @@
+import type { VercelRequest, VercelResponse } from '@vercel/node';
+
 import { getGraphQLParameters, processRequest, renderGraphiQL, sendResult, shouldRenderGraphiQL } from "graphql-helix";
 import { envelop, useEngine, useSchema } from "@envelop/core"
-import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { execute, parse, subscribe, validate } from 'graphql';
 
 import {schema} from "../data/schema";
@@ -13,27 +14,27 @@ const getEnveloped = envelop({
     ],
 })
 
-export default async (request: VercelRequest, response: VercelResponse) => {
-    const envRequest = {
-        body: request.body,
-        headers: request.headers,
-        method: request.method ?? 'POST',
-        query: request.query
+export default async (req: VercelRequest, res: VercelResponse) => {
+    const request = {
+        body: req.body,
+        headers: req.headers,
+        method: req.method ?? 'POST',
+        query: req.query
     }
 
-    // Determine whether we should render GraphiQL instead of returning an API response
-    if (shouldRenderGraphiQL(envRequest)) {
-        response.setHeader("Content-Type", "text/html");
-        response.send(renderGraphiQL({
+    // Determine whether we should render GraphiQL instead of returning an API res
+    if (shouldRenderGraphiQL(request)) {
+        res.setHeader("Content-Type", "text/html");
+        res.send(renderGraphiQL({
             endpoint: '/api/graphql',
         }));
         return;
     }
-    const {parse, validate, contextFactory, execute, schema} = getEnveloped({
-        request
-    })
 
-    const {operationName, query, variables} = getGraphQLParameters(envRequest)
+    const {parse, validate, contextFactory, execute, schema} = getEnveloped({})
+
+    const {operationName, query, variables} = getGraphQLParameters(request)
+
     const result = await processRequest({
         parse,
         validate,
@@ -43,9 +44,9 @@ export default async (request: VercelRequest, response: VercelResponse) => {
         operationName,
         query,
         variables,
-        request: envRequest,
+        request,
         schema,
     })
 
-    await sendResult(result, response);
+    await sendResult(result, res);
 };
