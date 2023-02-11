@@ -9,7 +9,7 @@
  * return `false`
  */
 
-import fetch from "node-fetch";
+import {fetch} from "@whatwg-node/fetch";
 
 const {
     CLIENT_ID = 'invalid',

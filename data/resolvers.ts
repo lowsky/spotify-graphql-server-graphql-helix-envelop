@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import { fetch } from "@whatwg-node/fetch";
 
 import client_credentials from "./client_credentials";
 
