@@ -401,25 +401,25 @@
     "@types/mime" "^1"
     "@types/node" "*"
 
-"@vercel/build-utils@6.4.0":
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.4.0.tgz#abf5c702209232c2f769893b5e745647815ad91a"
-  integrity sha512-kQEvyQOEjpfAwiX8cxuGmetffb3zkydrqQB1hJd4BihCz4Bt2f5YJvxEagzrehbGn5pCd4NRIKIi9cUL6vZRTA==
+"@vercel/build-utils@6.7.0":
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.7.0.tgz#f0915b0a36dd3b56f188c7e477995aa910c151c0"
+  integrity sha512-1cHgu0AzETSMLo1ugeHOT2pcrXNoZb1bwgxBP7yTIlJAKWLIEqPHbJWFvKQXZl2FV3kzzTctTrw/YNUWmntYiA==
 
-"@vercel/node-bridge@3.1.14":
-  version "3.1.14"
-  resolved "https://registry.yarnpkg.com/@vercel/node-bridge/-/node-bridge-3.1.14.tgz#992b8715ca8537a190ff58aa828aca679290da0b"
-  integrity sha512-TAbo0rwBenmWywcEup+5lZgr6ILPPq55P33JRX+oJJuTxYib0NqVj47gEvLTxaj3MoJFgp0iDlC9A0uAf4ykxQ==
+"@vercel/node-bridge@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@vercel/node-bridge/-/node-bridge-4.0.0.tgz#3214ff14c9388cb9bc3e78023ff618d3410b605d"
+  integrity sha512-617HSGelTGR68s0kqsPV0R2UiSvcw3Zf5Yv32S5NN4AH5TZGRr5DQJ3ATr4C/HrK7CHK5B7FDVrv2JebdVpPYQ==
 
-"@vercel/node@2.9.13":
-  version "2.9.13"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.9.13.tgz#f97206ac71975335eefb371fffe7e0fe510d1bc2"
-  integrity sha512-cG8oxysTmHkjX/vYSISslaw6ytntBhRFxWuQq4GnwkBBk1Nwd75ULNY94mvG/HKgDylQSaXbpwuFgma/WurwCQ==
+"@vercel/node@2.10.2":
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.10.2.tgz#9d09574b99ba59cef4865187acc829d5a2503f98"
+  integrity sha512-rsxVEosHUtSBswZfZWxWgV4v5x8COB9kTp4lhaxZXC9cHFgXT5ydV7m4R2NOPwcRGUbQSyy9ushX1RnsOan0qw==
   dependencies:
     "@edge-runtime/vm" "2.0.0"
     "@types/node" "14.18.33"
-    "@vercel/build-utils" "6.4.0"
-    "@vercel/node-bridge" "3.1.14"
+    "@vercel/build-utils" "6.7.0"
+    "@vercel/node-bridge" "4.0.0"
     "@vercel/static-config" "2.0.14"
     edge-runtime "2.0.0"
     esbuild "0.14.47"
