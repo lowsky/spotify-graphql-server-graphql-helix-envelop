@@ -401,26 +401,26 @@
     "@types/mime" "^1"
     "@types/node" "*"
 
-"@vercel/build-utils@6.7.0":
-  version "6.7.0"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.7.0.tgz#f0915b0a36dd3b56f188c7e477995aa910c151c0"
-  integrity sha512-1cHgu0AzETSMLo1ugeHOT2pcrXNoZb1bwgxBP7yTIlJAKWLIEqPHbJWFvKQXZl2FV3kzzTctTrw/YNUWmntYiA==
+"@vercel/build-utils@6.7.1":
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.7.1.tgz#94bccb959d9f2dcdecb7744c939b546073902373"
+  integrity sha512-Ecc9oQBSVwk1suENcRcj1L6gQrUt4+0XA9oPFxrUpoFEk04lP/ZV3qAQPk+ex08N+vfUulYdqb+cmVTnwqsmqw==
 
-"@vercel/node-bridge@4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@vercel/node-bridge/-/node-bridge-4.0.0.tgz#3214ff14c9388cb9bc3e78023ff618d3410b605d"
-  integrity sha512-617HSGelTGR68s0kqsPV0R2UiSvcw3Zf5Yv32S5NN4AH5TZGRr5DQJ3ATr4C/HrK7CHK5B7FDVrv2JebdVpPYQ==
+"@vercel/node-bridge@4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@vercel/node-bridge/-/node-bridge-4.0.1.tgz#e4f41188f61d9cd4e7c44de31d436dd447e1978c"
+  integrity sha512-XEfKfnLGzlIBpad7eGNPql1HnMhoSTv9q3uDNC4axdaAC/kI5yvl8kXjuCPAXYvpbJnVQPpcSUC5/r5ap8F3jA==
 
-"@vercel/node@2.10.2":
-  version "2.10.2"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.10.2.tgz#9d09574b99ba59cef4865187acc829d5a2503f98"
-  integrity sha512-rsxVEosHUtSBswZfZWxWgV4v5x8COB9kTp4lhaxZXC9cHFgXT5ydV7m4R2NOPwcRGUbQSyy9ushX1RnsOan0qw==
+"@vercel/node@2.10.3":
+  version "2.10.3"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.10.3.tgz#24a65d9f7e69161762c85df630601f3852308c26"
+  integrity sha512-R6YwD7YTV4OPEjXnthTP2Zn96ZF2TAjmBhGKfYC9ZuqlmFzSxqyuHn+RUSkknkKBO46b4OzaNdi5XVnAdJizLA==
   dependencies:
     "@edge-runtime/vm" "2.0.0"
     "@types/node" "14.18.33"
-    "@vercel/build-utils" "6.7.0"
-    "@vercel/node-bridge" "4.0.0"
-    "@vercel/static-config" "2.0.14"
+    "@vercel/build-utils" "6.7.1"
+    "@vercel/node-bridge" "4.0.1"
+    "@vercel/static-config" "2.0.15"
     edge-runtime "2.0.0"
     esbuild "0.14.47"
     exit-hook "2.2.1"
@@ -428,10 +428,10 @@
     ts-node "10.9.1"
     typescript "4.3.4"
 
-"@vercel/static-config@2.0.14":
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/@vercel/static-config/-/static-config-2.0.14.tgz#8097516c94360ea7914d8b89cdb4b7da72e29841"
-  integrity sha512-Ih0H/V8geRjsNpvD73dphV+y0Pe21RXIJEUW/XI0y7ZrYzLbYQt4AAIvsgfDqcQNm4xEizh3sEXArPWEp18bdQ==
+"@vercel/static-config@2.0.15":
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/@vercel/static-config/-/static-config-2.0.15.tgz#a1e4d052e50cb9493071aaa2b4ca5e05c054fada"
+  integrity sha512-A/N3ZGiOOMql9JArwBTIfhFngFtmVC7ndKQKp0FoFq8MO79AS5qBBtdpILS5QA71M5v+9CPjVkHxN6QweU55Xg==
   dependencies:
     ajv "8.6.3"
     json-schema-to-ts "1.6.4"
