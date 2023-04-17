@@ -282,10 +282,10 @@
     tslib "^2.4.1"
     webcrypto-core "^1.7.4"
 
-"@snyk/protect@1.1140.0":
-  version "1.1140.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1140.0.tgz#3238164b46b9b2e166202be86224b86430beb2fa"
-  integrity sha512-xs882A4lC3ICCKgXOzV42Mjj6ZDNF3UpUmfJIeKIcfoyICR5BCrszLaL6l/6jdGUixdyxLjzv4EGRVOxVvNKbw==
+"@snyk/protect@1.1142.0":
+  version "1.1142.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1142.0.tgz#1644d0f351ca2cf6886d5d7ae2145f79d2ac15f6"
+  integrity sha512-6vV1Ly/UoLD8VWkClhBFHtiZCCYSlDYBkSfPLYG9E+Ts3u+VwT1zCp5urQq9pv5R+FtjgNXtWtA2K21NSnDoZg==
 
 "@ts-morph/common@~0.11.0":
   version "0.11.1"
