@@ -411,27 +411,29 @@
   resolved "https://registry.yarnpkg.com/@vercel/node-bridge/-/node-bridge-4.0.1.tgz#e4f41188f61d9cd4e7c44de31d436dd447e1978c"
   integrity sha512-XEfKfnLGzlIBpad7eGNPql1HnMhoSTv9q3uDNC4axdaAC/kI5yvl8kXjuCPAXYvpbJnVQPpcSUC5/r5ap8F3jA==
 
-"@vercel/node@2.10.3":
-  version "2.10.3"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.10.3.tgz#24a65d9f7e69161762c85df630601f3852308c26"
-  integrity sha512-R6YwD7YTV4OPEjXnthTP2Zn96ZF2TAjmBhGKfYC9ZuqlmFzSxqyuHn+RUSkknkKBO46b4OzaNdi5XVnAdJizLA==
+"@vercel/node@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.11.0.tgz#166c59a37f2cfe0b14fd421781effba0455b4865"
+  integrity sha512-vGZyh+r+qkU5Ys9nJ22o5RfuVAtZMA2wox96kGvA/XEX333FZNlFfbOUZfNSrDaQkrbDIeAA4zDj3XtvIyYlZw==
   dependencies:
     "@edge-runtime/vm" "2.0.0"
     "@types/node" "14.18.33"
     "@vercel/build-utils" "6.7.1"
     "@vercel/node-bridge" "4.0.1"
-    "@vercel/static-config" "2.0.15"
+    "@vercel/static-config" "2.0.16"
     edge-runtime "2.0.0"
     esbuild "0.14.47"
     exit-hook "2.2.1"
     node-fetch "2.6.7"
+    path-to-regexp "6.2.1"
+    ts-morph "12.0.0"
     ts-node "10.9.1"
     typescript "4.3.4"
 
-"@vercel/static-config@2.0.15":
-  version "2.0.15"
-  resolved "https://registry.yarnpkg.com/@vercel/static-config/-/static-config-2.0.15.tgz#a1e4d052e50cb9493071aaa2b4ca5e05c054fada"
-  integrity sha512-A/N3ZGiOOMql9JArwBTIfhFngFtmVC7ndKQKp0FoFq8MO79AS5qBBtdpILS5QA71M5v+9CPjVkHxN6QweU55Xg==
+"@vercel/static-config@2.0.16":
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/@vercel/static-config/-/static-config-2.0.16.tgz#2495325056e62b94925d8432b703bbf5625b06e5"
+  integrity sha512-lULo+NWBMpTJb9kR4AwYYK/2e7wknTJO2iFxgYYOkG5i12WHgPhMnXDKrEOcotxctd0yPKx3TsWVGEXniNm63g==
   dependencies:
     ajv "8.6.3"
     json-schema-to-ts "1.6.4"
@@ -1245,6 +1247,11 @@ path-to-regexp@0.1.7:
   version "0.1.7"
   resolved "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-0.1.7.tgz"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
+
+path-to-regexp@6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.1.tgz#d54934d6798eb9e5ef14e7af7962c945906918e5"
+  integrity sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==
 
 picocolors@1.0.0:
   version "1.0.0"
