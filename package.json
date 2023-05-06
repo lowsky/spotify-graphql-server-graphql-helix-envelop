@@ -34,7 +34,7 @@
     "@types/cors": "2.8.13",
     "@types/express": "4.17.17",
     "@types/node": "18.16.5",
-    "@vercel/node": "2.11.0",
+    "@vercel/node": "2.14.1",
     "tsx": "3.12.7"
   },
   "snyk": true
