@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@envelop/core": "3.0.6",
-    "@graphql-tools/mock": "8.7.20",
+    "@graphql-tools/mock": "9.0.0",
     "@snyk/protect": "1.1154.0",
     "@whatwg-node/fetch": "0.8.8",
     "cors": "2.8.5",
