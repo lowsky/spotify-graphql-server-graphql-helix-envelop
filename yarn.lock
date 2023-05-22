@@ -394,28 +394,28 @@
     "@types/mime" "^1"
     "@types/node" "*"
 
-"@vercel/build-utils@6.7.2":
-  version "6.7.2"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.7.2.tgz#d2b7acbc552b7fb78cfd8600d1b34612a71a7099"
-  integrity sha512-STSWs66rxX5pVKkhsYNeLx/Vlxjwe+dhy6PfXgBEJua7FXbWDjXjUyjzEyk63yUWysUflEBtLW9ckS/2V0QCZw==
+"@vercel/build-utils@6.7.3":
+  version "6.7.3"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-6.7.3.tgz#136c05962d43379aa2dc773a832ce08f9d823a67"
+  integrity sha512-BCu5zX8MhzXAvd7X1Hn6b8blSTzKyY7JAEAdT5+FcB8e5fTs4bIQmYNc9JMeCqUgtisSpJvDAt69OLYP/aqEKw==
 
 "@vercel/error-utils@1.0.8":
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/@vercel/error-utils/-/error-utils-1.0.8.tgz#5cefc4142820846d011cf048ddfb0afda81d484b"
   integrity sha512-s+f7jP2oH1koICbQ8e3K9hOpOeUct7rbCnF9qsNwXemq850wAh2e90tp9R6oYBM0BNpiLRRm+oG5zD2sCIm3HQ==
 
-"@vercel/node@2.14.1":
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.14.1.tgz#5a4d2fded3426365b7d92b1b502b40ed9d6c5002"
-  integrity sha512-9wtWyrsPNAy+UkLJvdUIFzpqAybkAmdap4nwfrgcNDQ4YsLHr+Wd11BWlHVeKL6Oqjny9N4YikEHdOEPjoIRtA==
+"@vercel/node@2.14.3":
+  version "2.14.3"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-2.14.3.tgz#57df48035fdea0cd41e6c9278960524e3bdcc781"
+  integrity sha512-XEoMTQvqQC11hItfDsTegtBA66jTFXA7PTyI2QHASpoAQFMGcx91XI/sTPvxgK/1u+eXjxpiv6OU3l4/i27G4Q==
   dependencies:
     "@edge-runtime/vm" "2.0.0"
     "@types/node" "14.18.33"
     "@types/node-fetch" "2.6.3"
-    "@vercel/build-utils" "6.7.2"
+    "@vercel/build-utils" "6.7.3"
     "@vercel/error-utils" "1.0.8"
     "@vercel/static-config" "2.0.17"
-    async-listen "1.2.0"
+    async-listen "3.0.0"
     edge-runtime "2.1.4"
     esbuild "0.14.47"
     exit-hook "2.2.1"
@@ -505,15 +505,15 @@ array-flatten@1.1.1:
   resolved "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
 
-async-listen@1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/async-listen/-/async-listen-1.2.0.tgz#861ab6f92e1703ba54498b10ddb9b5da7b69f363"
-  integrity sha512-CcEtRh/oc9Jc4uWeUwdpG/+Mb2YUHKmdaTf0gUr7Wa+bfp4xx70HOb3RuSTJMvqKNB1TkdTfjLdrcz2X4rkkZA==
-
 async-listen@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/async-listen/-/async-listen-2.0.3.tgz#be1be5a1b15e6007123e67275450fc4e84955e61"
   integrity sha512-WVLi/FGIQaXyfYyNvmkwKT1RZbkzszLLnmW/gFCc5lbVvN/0QQCWpBwRBk2OWSdkkmKRBc8yD6BrKsjA3XKaSw==
+
+async-listen@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/async-listen/-/async-listen-3.0.0.tgz#2e5941390b7d8c753d4dbe94bc6aecbdde52ec5e"
+  integrity sha512-V+SsTpDqkrWTimiotsyl33ePSjA5/KrithwupuvJ6ztsqPvGv6ge4OredFhPffVXiLN/QUWvE0XcqJaYgt6fOg==
 
 asynckit@^0.4.0:
   version "0.4.0"
