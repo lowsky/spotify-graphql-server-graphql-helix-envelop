@@ -440,18 +440,18 @@
   resolved "https://registry.yarnpkg.com/@whatwg-node/events/-/events-0.1.0.tgz#1e7b4e4fd0d149b247ec0132b1030fe522282295"
   integrity sha512-PnnAP/o6QkgAdjcExKugzl5ZUqPVcv9lvgGz/to3Xe5Du/P5Zw6MzB8P8mI/B4mplYOYsr6AkXkb4plG0ydCow==
 
-"@whatwg-node/fetch@0.9.1":
-  version "0.9.1"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.9.1.tgz#c4e5dd859645ee60f4afc5c3d1779c06ac1d673d"
-  integrity sha512-5aTZX0FqO3Ug2mVlnxyOm++F5C2GfutoB4iIO0ykm5WTsUe0NLqJYDijID4qshZSciFeyodvNU/lRMKUhar8eQ==
+"@whatwg-node/fetch@0.9.4":
+  version "0.9.4"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.9.4.tgz#3627c997d1b68217b1597dcd026dc2674510f587"
+  integrity sha512-nR0nZeOCy4M4ep/nwuGdQxRlOrHqmA5M3t+laOAsPEwwnpoTmA4DSuopyD5Dqk7+sFaOiX328HeGhvwj4HHdng==
   dependencies:
-    "@whatwg-node/node-fetch" "^0.4.1"
-    urlpattern-polyfill "^8.0.0"
+    "@whatwg-node/node-fetch" "^0.4.3"
+    urlpattern-polyfill "^9.0.0"
 
-"@whatwg-node/node-fetch@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/node-fetch/-/node-fetch-0.4.1.tgz#1bcb608ace49db54c0000661293c2d4675774439"
-  integrity sha512-pO27RvU5fIWdCcOXOm17dtS2Kd7pWAxO4RYiX1wBumP6WXqI+OPr/resrwn5dk7oQl8JuHf+hPoy2/Qqx9dCHw==
+"@whatwg-node/node-fetch@^0.4.3":
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/node-fetch/-/node-fetch-0.4.3.tgz#bc1a9c2dbdc99e8d0c269052d6055a713de6c3d3"
+  integrity sha512-C+nki+rxOM4mEfQwxohx4QXlPV96oQfQNFR94/3jp125vh+UW/r0CAG/ELUFQSJIcSFAQJarq+mZGiv46Jg7ag==
   dependencies:
     "@whatwg-node/events" "^0.1.0"
     busboy "^1.6.0"
@@ -1556,10 +1556,10 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-urlpattern-polyfill@^8.0.0:
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/urlpattern-polyfill/-/urlpattern-polyfill-8.0.2.tgz#99f096e35eff8bf4b5a2aa7d58a1523d6ebc7ce5"
-  integrity sha512-Qp95D4TPJl1kC9SKigDcqgyM2VDVO4RiJc2d4qe5GrYm+zbIQCWWKAFaJNQ4BhdFeDGwBmAxqJBwWSJDb9T3BQ==
+urlpattern-polyfill@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/urlpattern-polyfill/-/urlpattern-polyfill-9.0.0.tgz#bc7e386bb12fd7898b58d1509df21d3c29ab3460"
+  integrity sha512-WHN8KDQblxd32odxeIgo83rdVDE2bvdkb86it7bMhYZwWKJz0+O0RK/eZiHYnM+zgt/U7hAHOlCQGfjjvSkw2g==
 
 utils-merge@1.0.1:
   version "1.0.1"
