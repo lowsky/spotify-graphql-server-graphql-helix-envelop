@@ -23,7 +23,7 @@
     "@snyk/protect": "1.1179.0",
     "@whatwg-node/fetch": "0.9.4",
     "cors": "2.8.5",
-    "dotenv": "16.1.4",
+    "dotenv": "16.3.1",
     "express": "4.18.2",
     "graphql": "16.6.0",
     "graphql-helix": "1.13.0",
