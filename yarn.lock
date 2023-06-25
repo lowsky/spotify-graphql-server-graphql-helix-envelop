@@ -272,10 +272,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@snyk/protect@1.1179.0":
-  version "1.1179.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1179.0.tgz#5d2fc040a894549bd20587f3e94f0cd79a41ba8c"
-  integrity sha512-pQrtYAITDQABaE7zHUZyqajt3IXE4fmC21EEpByRrQCVRWSWbu+wP8ML1iLPVm3J2OK6o5vIANPz/JL0GYDuxg==
+"@snyk/protect@1.1184.0":
+  version "1.1184.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1184.0.tgz#02130d3b3c03c22858c080fd4b53505f22d2c2ec"
+  integrity sha512-Te6GWlyvuLC9VgXicPyMCpFoNflg7thA5lthkMCRDWADUNxHAyd0kE2gPI5gdiKoeY/r1wj387ujCkw4C8sHvQ==
 
 "@ts-morph/common@~0.11.0":
   version "0.11.1"
