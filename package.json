@@ -1,11 +1,10 @@
 {
   "name": "spot-graphql-server",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "engines": {
-    "yarn": ">=1.22.17",
-    "npm": "10",
-    "node": ">=16.x"
+    "yarn": ">=1.22.19",
+    "node": ">=18.x"
   },
   "scripts": {
     "test": "npm run simpletest",
