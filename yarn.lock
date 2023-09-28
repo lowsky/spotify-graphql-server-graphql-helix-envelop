@@ -38,10 +38,10 @@
   dependencies:
     "@edge-runtime/primitives" "3.1.1"
 
-"@envelop/core@4.0.1":
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-4.0.1.tgz#0f3eb33a396e9f4527d7fa8079055ec151eb73aa"
-  integrity sha512-uBLI7ql3hZopz7vMi9UDAb9HWzKw4STKiqg4QT+lb+tu5ZNaeuJ4fom2rrmgITz38B85QZOhZrGyVrlJXxfDzw==
+"@envelop/core@4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-4.0.3.tgz#6bc3e1ed3b31aa41d81106eb5071a9b8eec188d0"
+  integrity sha512-O0Vz8E0TObT6ijAob8jYFVJavcGywKThM3UAsxUIBBVPYZTMiqI9lo2gmAnbMUnrDcAYkUTZEW9FDYPRdF5l6g==
   dependencies:
     "@envelop/types" "4.0.1"
     tslib "^2.5.0"
