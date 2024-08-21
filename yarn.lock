@@ -475,26 +475,20 @@
     json-schema-to-ts "1.6.4"
     ts-morph "12.0.0"
 
-"@whatwg-node/events@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/events/-/events-0.1.0.tgz#1e7b4e4fd0d149b247ec0132b1030fe522282295"
-  integrity sha512-PnnAP/o6QkgAdjcExKugzl5ZUqPVcv9lvgGz/to3Xe5Du/P5Zw6MzB8P8mI/B4mplYOYsr6AkXkb4plG0ydCow==
-
-"@whatwg-node/fetch@0.9.19":
-  version "0.9.19"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.9.19.tgz#4ef9336558dc076ae833d329cd15b70402851cf2"
-  integrity sha512-J+zopRcUVOhkiQYlHpxOEZuOgZtqW9xMaNQFDjESm9vRcyATms+E2/p2mZiVQGllPqWflkA3SzoJC1MxV4Pf9g==
+"@whatwg-node/fetch@0.9.21":
+  version "0.9.21"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/fetch/-/fetch-0.9.21.tgz#24a08c441126ae2d0f94544e718bdb4a8c2b5ad0"
+  integrity sha512-Wt0jPb+04JjobK0pAAN7mEHxVHcGA9HoP3OyCsZtyAecNQeADXCZ1MihFwVwjsgaRYuGVmNlsCmLxlG6mor8Gw==
   dependencies:
-    "@whatwg-node/node-fetch" "^0.5.16"
+    "@whatwg-node/node-fetch" "^0.5.23"
     urlpattern-polyfill "^10.0.0"
 
-"@whatwg-node/node-fetch@^0.5.16":
-  version "0.5.16"
-  resolved "https://registry.yarnpkg.com/@whatwg-node/node-fetch/-/node-fetch-0.5.16.tgz#68669bd59265015af64fcc7c0f233f9ae03878a7"
-  integrity sha512-BmwxxGZTI8IDSiocYyb2sWMlHpa4Jq2NZ4BOuvmODgL2pqjgcFfLBuEnpX2xLscQHmmTnk+gKh0EShfRAGn3Pw==
+"@whatwg-node/node-fetch@^0.5.23":
+  version "0.5.23"
+  resolved "https://registry.yarnpkg.com/@whatwg-node/node-fetch/-/node-fetch-0.5.23.tgz#4ecca06db1a5573898bd05c84cfebee4844647a8"
+  integrity sha512-t+FYRiw+UYi1mfcFzGnFCqS0c5RPZs9zmnq4sIu9DJvEp/IYjwutajz91Tn+YntZP1uYq0a3sNBmXoJ5f1pXoQ==
   dependencies:
     "@kamilkisiela/fast-url-parser" "^1.1.4"
-    "@whatwg-node/events" "^0.1.0"
     busboy "^1.6.0"
     fast-querystring "^1.1.1"
     tslib "^2.6.3"
