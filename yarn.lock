@@ -176,51 +176,41 @@
   resolved "https://registry.yarnpkg.com/@fastify/busboy/-/busboy-2.1.0.tgz#0709e9f4cb252351c609c6e6d8d6779a8d25edff"
   integrity sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==
 
-"@graphql-tools/merge@^9.0.3":
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-9.0.3.tgz#4d0b467132e6f788b69fab803d31480b8ce4b61a"
-  integrity sha512-FeKv9lKLMwqDu0pQjPpF59GY3HReUkWXKsMIuMuJQOKh9BETu7zPEFUELvcw8w+lwZkl4ileJsHXC9+AnsT2Lw==
+"@graphql-tools/merge@^9.0.10":
+  version "9.0.10"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-9.0.10.tgz#cdf40ce75bfd36d4eddb1ece610c7a17e99314d4"
+  integrity sha512-sU+b6ZmKtGnqHq8S+VI5UmjZVHWzT+b+QtCsJUEXckCKdq1P3JmwIT8+8DVxSQlh1dzpiVq37EOcJrEYOBZtBA==
   dependencies:
-    "@graphql-tools/utils" "^10.0.13"
+    "@graphql-tools/utils" "^10.6.0"
     tslib "^2.4.0"
 
-"@graphql-tools/mock@9.0.4":
-  version "9.0.4"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-9.0.4.tgz#6eb52a3f63646ea359ece60916b67c2cbc4fb9d4"
-  integrity sha512-/pfrBoL6QkKBrJcaOZ/2FtfoAYmiQE+L6Up3hWbSWjg1XJfecjqptLTcM2Wf0dmHAFkjCK1k4QVNHMmGJ94IOA==
+"@graphql-tools/mock@9.0.7":
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/mock/-/mock-9.0.7.tgz#d2c79033bc5122f3abf3cff4660d78dff1f6bd17"
+  integrity sha512-oY+2PwcUxkpGyFTD5SPlwMzlkL6701bdBBlBnb0wk6DFo461Nlv6ryPrDnIhuNV7mk91XmdO4Iil6t4TF1OntQ==
   dependencies:
-    "@graphql-tools/schema" "^10.0.4"
-    "@graphql-tools/utils" "^10.2.1"
+    "@graphql-tools/schema" "^10.0.9"
+    "@graphql-tools/utils" "^10.6.0"
     fast-json-stable-stringify "^2.1.0"
     tslib "^2.4.0"
 
-"@graphql-tools/schema@^10.0.4":
-  version "10.0.4"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-10.0.4.tgz#d4fc739a2cc07b4fc5f31a714178a561cba210cd"
-  integrity sha512-HuIwqbKxPaJujox25Ra4qwz0uQzlpsaBOzO6CVfzB/MemZdd+Gib8AIvfhQArK0YIN40aDran/yi+E5Xf0mQww==
+"@graphql-tools/schema@^10.0.9":
+  version "10.0.9"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/schema/-/schema-10.0.9.tgz#923fd9abe0b5d57cbe235c0907a661b36e1a8e37"
+  integrity sha512-R/sPRLJnEHg/F7owvH1zLbfXxqrEgFyr/qSjsG1q+gWhCrxbo/+c2DVjeZEZ2/AKCLllDHTD5TOU2Y5sZGNxZg==
   dependencies:
-    "@graphql-tools/merge" "^9.0.3"
-    "@graphql-tools/utils" "^10.2.1"
+    "@graphql-tools/merge" "^9.0.10"
+    "@graphql-tools/utils" "^10.6.0"
     tslib "^2.4.0"
     value-or-promise "^1.0.12"
 
-"@graphql-tools/utils@^10.0.13":
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-10.1.0.tgz#d8c23a8b8636a5df59b14991bf25eae5ac15d314"
-  integrity sha512-wLPqhgeZ9BZJPRoaQbsDN/CtJDPd/L4qmmtPkjI3NuYJ39x+Eqz1Sh34EAGMuDh+xlOHqBwHczkZUpoK9tvzjw==
+"@graphql-tools/utils@^10.6.0":
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-10.6.0.tgz#7a37e725a65c4c8ed4075553f10bcf7910781c51"
+  integrity sha512-bqSn2ekSNwFVZprY6YsrHkqPA7cPLNKxiPlEzS1djhfvx4q9tx7Uwc5dnLp3SSnKinJ8dJk9FA5sxNcKjCM44w==
   dependencies:
     "@graphql-typed-document-node/core" "^3.1.1"
-    cross-inspect "1.0.0"
-    dset "^3.1.2"
-    tslib "^2.4.0"
-
-"@graphql-tools/utils@^10.2.1":
-  version "10.2.2"
-  resolved "https://registry.yarnpkg.com/@graphql-tools/utils/-/utils-10.2.2.tgz#6477295fae051ffb5d6c28253aa6d8a449d4a820"
-  integrity sha512-ueoplzHIgFfxhFrF4Mf/niU/tYHuO6Uekm2nCYU72qpI+7Hn9dA2/o5XOBvFXDk27Lp5VSvQY5WfmRbqwVxaYQ==
-  dependencies:
-    "@graphql-typed-document-node/core" "^3.1.1"
-    cross-inspect "1.0.0"
+    cross-inspect "1.0.1"
     dset "^3.1.2"
     tslib "^2.4.0"
 
@@ -840,10 +830,10 @@ create-require@^1.1.0:
   resolved "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz"
   integrity sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
 
-cross-inspect@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/cross-inspect/-/cross-inspect-1.0.0.tgz#5fda1af759a148594d2d58394a9e21364f6849af"
-  integrity sha512-4PFfn4b5ZN6FMNGSZlyb7wUhuN8wvj8t/VQHZdM4JsDcruGJ8L2kf9zao98QIrBPFCpdk27qst/AGTl7pL3ypQ==
+cross-inspect@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/cross-inspect/-/cross-inspect-1.0.1.tgz#15f6f65e4ca963cf4cc1a2b5fef18f6ca328712b"
+  integrity sha512-Pcw1JTvZLSJH83iiGWt6fRcT+BjZlCDRVwYLbUcHzv/CRpB7r0MlSrGbIyQvVSNyGnbt7G4AXuyCiDR3POvZ1A==
   dependencies:
     tslib "^2.4.0"
 
