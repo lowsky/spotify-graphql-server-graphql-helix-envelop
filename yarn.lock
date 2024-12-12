@@ -499,10 +499,10 @@
     "@types/mime" "^1"
     "@types/node" "*"
 
-"@vercel/build-utils@8.7.0":
-  version "8.7.0"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-8.7.0.tgz#253736b07938787e08470c3758e87c20ecb1fb89"
-  integrity sha512-ofZX+ABiW76u5khIyYyH5xK5KSuiAteqRu5hz2k1a2WHLwF7VpeBg8gdFR+HwbVnNkHtkMA64ya5Dd/lNoABkw==
+"@vercel/build-utils@8.8.0":
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-8.8.0.tgz#e1b8f55b0addc3604e98fd3e0c3a070d874c7dcc"
+  integrity sha512-4jkeJ/Xr0epojgfiyQufB8vC0ubE9SCfA9I2BGcOIKcf65C25juSvuYwaLixnjZXHUTO4Y9W7fdgiLUk55MgbA==
 
 "@vercel/error-utils@2.0.3":
   version "2.0.3"
@@ -527,16 +527,16 @@
     node-gyp-build "^4.2.2"
     resolve-from "^5.0.0"
 
-"@vercel/node@3.2.29":
-  version "3.2.29"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-3.2.29.tgz#71285b4fb0c6ea7df1036e1c58dff28f1aa78a52"
-  integrity sha512-WRVYidBqtRyYUw36v/WyUB2v97PsiV2+LepUiOPWcW9UpszQGGT2DAzsXOYqWveXMJKFhx0aETR6Nn6i+Yps1Q==
+"@vercel/node@4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-4.0.0.tgz#c9c5a735e9470491edfe8338bda8311cd10729ac"
+  integrity sha512-vSBe3Q1ggdMvXZwno/msl6kdoS/9p9AuLKJ9YJ4mwmwIBz9BsIYnweYKr6Ignel7pz41dxzimf+SBuLjq0kjQg==
   dependencies:
     "@edge-runtime/node-utils" "2.3.0"
     "@edge-runtime/primitives" "4.1.0"
     "@edge-runtime/vm" "3.2.0"
     "@types/node" "16.18.11"
-    "@vercel/build-utils" "8.7.0"
+    "@vercel/build-utils" "8.8.0"
     "@vercel/error-utils" "2.0.3"
     "@vercel/nft" "0.27.3"
     "@vercel/static-config" "3.0.0"
@@ -547,7 +547,7 @@
     esbuild "0.14.47"
     etag "1.8.1"
     node-fetch "2.6.9"
-    path-to-regexp "6.2.1"
+    path-to-regexp "6.3.0"
     ts-morph "12.0.0"
     ts-node "10.9.1"
     typescript "4.9.5"
@@ -1670,10 +1670,10 @@ path-to-regexp@0.1.12:
   resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-0.1.12.tgz#d5e1a12e478a976d432ef3c58d534b9923164bb7"
   integrity sha512-RA1GjUVMnvYFxuqovrEqZoxxW5NUZqbwKtYz/Tt7nXerk0LbLblQmrsgdeOxV5SFHf0UDggjS/bSeOZwt1pmEQ==
 
-path-to-regexp@6.2.1:
-  version "6.2.1"
-  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.2.1.tgz#d54934d6798eb9e5ef14e7af7962c945906918e5"
-  integrity sha512-JLyh7xT1kizaEvcaXOQwOc2/Yhw6KZOvPf1S8401UyLk86CU79LN3vl7ztXGm/pZ+YjoyAJ4rxmHwbkBXJX+yw==
+path-to-regexp@6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/path-to-regexp/-/path-to-regexp-6.3.0.tgz#2b6a26a337737a8e1416f9272ed0766b1c0389f4"
+  integrity sha512-Yhpw4T9C6hPpgPeA28us07OJeqZ5EzQTkbfwuhsUg0c237RomFoETJgmp2sa3F/41gfLE6G5cqcYwznmeEeOlQ==
 
 picocolors@1.0.0:
   version "1.0.0"
