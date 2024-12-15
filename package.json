@@ -24,7 +24,7 @@
     "cors": "2.8.5",
     "dotenv": "16.4.5",
     "express": "4.21.2",
-    "graphql": "16.9.0",
+    "graphql": "16.10.0",
     "graphql-helix": "1.13.0",
     "sass": "1.82.0",
     "typescript": "5.7.2"
