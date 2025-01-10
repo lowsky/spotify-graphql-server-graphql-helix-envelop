@@ -20,7 +20,7 @@
     "@envelop/core": "5.0.2",
     "@graphql-tools/mock": "9.0.15",
     "@snyk/protect": "1.1294.2",
-    "@whatwg-node/fetch": "0.10.1",
+    "@whatwg-node/fetch": "0.10.3",
     "cors": "2.8.5",
     "dotenv": "16.4.7",
     "express": "4.21.2",
