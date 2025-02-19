@@ -17,7 +17,7 @@
     "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "@envelop/core": "5.0.3",
+    "@envelop/core": "5.1.0",
     "@graphql-tools/mock": "9.0.15",
     "@snyk/protect": "1.1295.2",
     "@whatwg-node/fetch": "0.10.3",
