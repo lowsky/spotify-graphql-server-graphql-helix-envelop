@@ -36,18 +36,18 @@
   dependencies:
     "@edge-runtime/primitives" "4.1.0"
 
-"@envelop/core@5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-5.0.3.tgz#d359dd45853a4d3ab23e9d12187e544cde9ffa9b"
-  integrity sha512-SE3JxL7odst8igN6x77QWyPpXKXz/Hs5o5Y27r+9Br6WHIhkW90lYYVITWIJQ/qYgn5PkpbaVgeFY9rgqQaZ/A==
+"@envelop/core@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-5.1.0.tgz#36ba35fd6663d291c81534ac4ec6ca120dc6eb8f"
+  integrity sha512-tH5bntVdGaV9ZKFI0a2U4bn6HgtkBscCPdvLqZRlXR2XRWKe+AAUjkYo4vQ4iZTAzBaKJlRe/hVWuad/vcftPw==
   dependencies:
-    "@envelop/types" "5.0.0"
+    "@envelop/types" "^5.1.0"
     tslib "^2.5.0"
 
-"@envelop/types@5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@envelop/types/-/types-5.0.0.tgz#3ae59b50ec31d4bdcc7bd0b47e9c8cf2ac44b0ff"
-  integrity sha512-IPjmgSc4KpQRlO4qbEDnBEixvtb06WDmjKfi/7fkZaryh5HuOmTtixe1EupQI5XfXO8joc3d27uUZ0QdC++euA==
+"@envelop/types@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@envelop/types/-/types-5.1.0.tgz#bf495ab9bed499a33a3cbfea3e38f204990e41c9"
+  integrity sha512-E6axHyHK8RALJ7+GRVQ3wQ44rP9enVaRc5JiYHIkyfKWKPeHGmTz6Pe/kbtHC5fjuD2QwYCVcCfCoUlw3Xf4xw==
   dependencies:
     tslib "^2.5.0"
 
