@@ -32,7 +32,7 @@
   "devDependencies": {
     "@types/cors": "2.8.17",
     "@types/express": "5.0.0",
-    "@types/node": "22.13.10",
+    "@types/node": "22.13.14",
     "@vercel/node": "5.1.14",
     "tsx": "4.19.3"
   },
