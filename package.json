@@ -27,7 +27,7 @@
     "graphql": "16.10.0",
     "graphql-helix": "1.13.0",
     "sass": "1.86.0",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   },
   "devDependencies": {
     "@types/cors": "2.8.17",
