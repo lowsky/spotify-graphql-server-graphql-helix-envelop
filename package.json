@@ -30,7 +30,7 @@
     "typescript": "5.8.3"
   },
   "devDependencies": {
-    "@types/cors": "2.8.17",
+    "@types/cors": "2.8.18",
     "@types/express": "5.0.1",
     "@types/node": "22.15.7",
     "@vercel/node": "5.1.15",
