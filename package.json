@@ -33,7 +33,7 @@
     "@types/cors": "2.8.18",
     "@types/express": "5.0.2",
     "@types/node": "22.15.29",
-    "@vercel/node": "5.1.16",
+    "@vercel/node": "5.2.2",
     "tsx": "4.19.4"
   },
   "snyk": true
