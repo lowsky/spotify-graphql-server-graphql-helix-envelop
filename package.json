@@ -34,7 +34,7 @@
     "@types/express": "5.0.3",
     "@types/node": "22.17.1",
     "@vercel/node": "5.3.11",
-    "tsx": "4.20.3"
+    "tsx": "4.20.5"
   },
   "snyk": true
 }
