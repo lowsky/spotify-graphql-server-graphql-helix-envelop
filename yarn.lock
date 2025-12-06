@@ -563,20 +563,20 @@
     "@types/http-errors" "*"
     "@types/node" "*"
 
-"@vercel/build-utils@13.2.0":
-  version "13.2.0"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-13.2.0.tgz#453b573837b25c00921f994abe5a106e71c97924"
-  integrity sha512-dTbgdpAUdBXSFLJFnKley7wKZLNx19FjrXfqHk1/wp4z2t0sVmCBpWPdf/V4FIa/tcyuaIQE4AczDrbvt0lmog==
+"@vercel/build-utils@13.2.3":
+  version "13.2.3"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-13.2.3.tgz#85f6e2371967b9306910e5a2b1e4fcacd0c17979"
+  integrity sha512-SmXSNXfRh7E3wKR50IV3bGHw9iE5bw6D08LYvJdkQv1SjUgYVuIf2P5ceUPjzA2dqrKol0dxMvYb28dNHxmj5w==
 
 "@vercel/error-utils@2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@vercel/error-utils/-/error-utils-2.0.3.tgz#72575bf3a3ff3e67f474364e24e753d113c5b79a"
   integrity sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==
 
-"@vercel/nft@1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-1.1.0.tgz#a53a002858756938a4523de0e8e296647c2d8c02"
-  integrity sha512-mmttcHfhWiVRkO1mgnuyOXw9QMfh+K4AkT/kTTlvcLMymzO0vLUSa5YKJYeO33141ybwEsGBgB/5093UGhfZkQ==
+"@vercel/nft@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-1.1.1.tgz#998b0b299059aa19040400123ccaca3a5d81a749"
+  integrity sha512-mKMGa7CEUcXU75474kOeqHbtvK1kAcu4wiahhmlUenB5JbTQB8wVlDI8CyHR3rpGo0qlzoRWqcDzI41FUoBJCA==
   dependencies:
     "@mapbox/node-pre-gyp" "^2.0.0"
     "@rollup/pluginutils" "^5.1.3"
@@ -591,18 +591,18 @@
     picomatch "^4.0.2"
     resolve-from "^5.0.0"
 
-"@vercel/node@5.5.12":
-  version "5.5.12"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-5.5.12.tgz#660c92951c4ce8349b1429cc9366908496c11315"
-  integrity sha512-IWXpHTqYvEp2r3a1kWDtjHWQFaBOu8RLA5/ZBqtfOS5h0f72kkF7QBjvRDV0ndRCKFs0CoCKE2R+Am2DUAElTg==
+"@vercel/node@5.5.15":
+  version "5.5.15"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-5.5.15.tgz#5b9c200623f60951d3ff996913f9d0635d580f62"
+  integrity sha512-qAuPvkBONsfp3aQktYGxJsuJh+5pzs6GsR7oywIBEXlAfDB7XXAW/D1ECb8OP/pZyprUHi85o94a3bg6fIxJXg==
   dependencies:
     "@edge-runtime/node-utils" "2.3.0"
     "@edge-runtime/primitives" "4.1.0"
     "@edge-runtime/vm" "3.2.0"
     "@types/node" "16.18.11"
-    "@vercel/build-utils" "13.2.0"
+    "@vercel/build-utils" "13.2.3"
     "@vercel/error-utils" "2.0.3"
-    "@vercel/nft" "1.1.0"
+    "@vercel/nft" "1.1.1"
     "@vercel/static-config" "3.1.2"
     async-listen "3.0.0"
     cjs-module-lexer "1.2.3"
