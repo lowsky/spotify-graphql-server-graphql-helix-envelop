@@ -36,10 +36,10 @@
   dependencies:
     "@edge-runtime/primitives" "4.1.0"
 
-"@envelop/core@5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-5.4.0.tgz#e79b8da5ab4f05eccd9758435df3dc50b11e607d"
-  integrity sha512-/1fat63pySE8rw/dZZArEVytLD90JApY85deDJ0/34gm+yhQ3k70CloSUevxoOE4YCGveG3s9SJJfQeeB4NAtQ==
+"@envelop/core@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@envelop/core/-/core-5.5.0.tgz#7e16eaaac84280740c9538640d7bd50ee32e854d"
+  integrity sha512-nsU1EyJQAStaKHR1ZkB/ug9XBm+WPTliYtdedbJ/L1ykrp7dbbn0srqBeDnZ2mbZVp4hH3d0Fy+Og9OgPWZx+g==
   dependencies:
     "@envelop/instrumentation" "^1.0.0"
     "@envelop/types" "^5.2.1"
