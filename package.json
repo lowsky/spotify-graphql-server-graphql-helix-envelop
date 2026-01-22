@@ -21,7 +21,7 @@
     "@graphql-tools/mock": "9.1.5",
     "@snyk/protect": "1.1302.0",
     "@whatwg-node/fetch": "0.10.13",
-    "cors": "2.8.5",
+    "cors": "2.8.6",
     "dotenv": "17.2.3",
     "express": "5.2.1",
     "graphql": "16.12.0",
