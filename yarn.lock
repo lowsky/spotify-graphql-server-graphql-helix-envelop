@@ -409,10 +409,10 @@
     estree-walker "^2.0.2"
     picomatch "^4.0.2"
 
-"@snyk/protect@1.1303.0":
-  version "1.1303.0"
-  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1303.0.tgz#78dbac6687e69df88fa4c004350c982f42536f89"
-  integrity sha512-uwqJ9+7GvhhHdgxhR2Ohx1Z/I5lJNp3onTr5jw8alrMPjsYPZ7O9Rsd5Bm4cIMoIdGoU0tc69KXzBbhlKRMRXw==
+"@snyk/protect@1.1303.1":
+  version "1.1303.1"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1303.1.tgz#368e7fa28d1e590928c582453a2834c3cae2dd32"
+  integrity sha512-e0NgkjxnKF4rIxcNvDgpka+0eWy3gbgViWXIK4uNJnFJqAveUXWQTBcHhNA8yVxv6KZYoUYJgwUXJceTY8JPsQ==
 
 "@ts-morph/common@~0.11.0":
   version "0.11.1"
