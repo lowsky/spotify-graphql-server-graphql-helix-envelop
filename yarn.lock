@@ -530,22 +530,24 @@
     "@types/http-errors" "*"
     "@types/node" "*"
 
-"@vercel/build-utils@13.8.2":
-  version "13.8.2"
-  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-13.8.2.tgz#37f0f1951b2e9fb0e7b4aa058dcd4d6aa717430c"
-  integrity sha512-JSxGntOIq3JJA+w1CZ2w+QDocvW0JPtkkzTkGAa/pxmhE2/QnpCv15StI1Dpb4JJAtrC4zUmwMxKI9BgRdbPJw==
+"@vercel/build-utils@13.14.2":
+  version "13.14.2"
+  resolved "https://registry.yarnpkg.com/@vercel/build-utils/-/build-utils-13.14.2.tgz#7863d9d5d4120f05ee6bd3b9d1e85adeb9f9d6c5"
+  integrity sha512-L1wHzpSXVcaXji5+ylNV5yTpAKf/t6qEGNOdFrMSAqSWlcYtL9rrY1OFbqN+5gIAWXjdCqnkmBRVp1lk20uwdw==
   dependencies:
-    "@vercel/python-analysis" "0.10.1"
+    "@vercel/python-analysis" "0.11.0"
+    cjs-module-lexer "1.2.3"
+    es-module-lexer "1.5.0"
 
 "@vercel/error-utils@2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@vercel/error-utils/-/error-utils-2.0.3.tgz#72575bf3a3ff3e67f474364e24e753d113c5b79a"
   integrity sha512-CqC01WZxbLUxoiVdh9B/poPbNpY9U+tO1N9oWHwTl5YAZxcqXmmWJ8KNMFItJCUUWdY3J3xv8LvAuQv2KZ5YdQ==
 
-"@vercel/nft@1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-1.4.0.tgz#c03694bc3d8993b6f4df6f53aafcb076e94955dc"
-  integrity sha512-rr7JVnI7YGjA4lngucrWjZ7eCOJZZQaDHB+5NRGOuNc+k4PU2Lb9PmYm8uBmW8qichF7WkR2RmwmhXHBhx6wzw==
+"@vercel/nft@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@vercel/nft/-/nft-1.5.0.tgz#37dbededa3023d9e44d1292b594786ab1653536f"
+  integrity sha512-IWTDeIoWhQ7ZtRO/JRKH+jhmeQvZYhtGPmzw/QGDY+wDCQqfm25P9yIdoAFagu4fWsK4IwZXDFIjrmp5rRm/sA==
   dependencies:
     "@mapbox/node-pre-gyp" "^2.0.0"
     "@rollup/pluginutils" "^5.1.3"
@@ -560,18 +562,18 @@
     picomatch "^4.0.2"
     resolve-from "^5.0.0"
 
-"@vercel/node@5.6.18":
-  version "5.6.18"
-  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-5.6.18.tgz#ccbb3a4fd07655397b7fe25c5fe1218ba5734e58"
-  integrity sha512-Hwu7S7JfKFOVVlvQEMMEbsCX4tXLprBemU9q15uN8iKJmuUtZpOZWqgcrxP9naa3cqfk0ZtsT+yik4Hi2Q1Z8Q==
+"@vercel/node@5.7.4":
+  version "5.7.4"
+  resolved "https://registry.yarnpkg.com/@vercel/node/-/node-5.7.4.tgz#433727ac3b25863c1aeb2049e06d963f5e281859"
+  integrity sha512-pSU3hl7fSPPD/0W0RzwbogFTiTUT+LDIu0+qOdd/ZZAPQauefs09KQiRZGkt3oPmKnAWTvoQv/Ea4dWZcE9ijQ==
   dependencies:
     "@edge-runtime/node-utils" "2.3.0"
     "@edge-runtime/primitives" "4.1.0"
     "@edge-runtime/vm" "3.2.0"
     "@types/node" "20.11.0"
-    "@vercel/build-utils" "13.8.2"
+    "@vercel/build-utils" "13.14.2"
     "@vercel/error-utils" "2.0.3"
-    "@vercel/nft" "1.4.0"
+    "@vercel/nft" "1.5.0"
     "@vercel/static-config" "3.2.0"
     async-listen "3.0.0"
     cjs-module-lexer "1.2.3"
@@ -588,10 +590,10 @@
     typescript "npm:typescript@5.9.3"
     undici "5.28.4"
 
-"@vercel/python-analysis@0.10.1":
-  version "0.10.1"
-  resolved "https://registry.yarnpkg.com/@vercel/python-analysis/-/python-analysis-0.10.1.tgz#fd66c2fef98dff305b37b349d8efc9e86f60265b"
-  integrity sha512-VH56vAqg97HX2c2IMfpqOaXZAg1YN3N/S1w9rpD1LhKU2ZrgfZ3R9RsAYuOs+GcFYLL8ic5PgxcLpjfogwXjSg==
+"@vercel/python-analysis@0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@vercel/python-analysis/-/python-analysis-0.11.0.tgz#796fb6658617af106b30a9e52eb83b9a9f395fcf"
+  integrity sha512-gsoj+nscmNm0xDh+tRhECRhit2VlAVaD7jc9h93sN6rDEBDxPo7eLEgIJFzVDaAItxERZ9Od2IK/04fB9vFy+g==
   dependencies:
     "@bytecodealliance/preview2-shim" "0.17.6"
     "@renovatebot/pep440" "4.2.1"
@@ -1013,6 +1015,11 @@ es-module-lexer@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.4.1.tgz#41ea21b43908fe6a287ffcbe4300f790555331f5"
   integrity sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==
+
+es-module-lexer@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.5.0.tgz#4878fee3789ad99e065f975fdd3c645529ff0236"
+  integrity sha512-pqrTKmwEIgafsYZAGw9kszYzmagcE/n4dbgwGWLEXg7J4QFJVQRBld8j3Q3GNez79jzxZshq0bcT962QHOghjw==
 
 es-object-atoms@^1.0.0, es-object-atoms@^1.1.1:
   version "1.1.1"
