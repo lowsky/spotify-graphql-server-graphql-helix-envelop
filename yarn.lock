@@ -2037,6 +2037,15 @@ tsx@4.21.0:
   optionalDependencies:
     fsevents "~2.3.3"
 
+tsx@4.21.1:
+  version "4.21.1"
+  resolved "https://registry.yarnpkg.com/tsx/-/tsx-4.21.1.tgz#3c7561c30d94ac074acfbad79a1efb5e7692757e"
+  integrity sha512-5QE2Q04cN1u0993w0LT5rPw3faZqZU1fFn1mGE0pV53N1Dn7c+QFFxQu1mBeSgeOXwFyTicZw02wVgp3Tb5cAQ==
+  dependencies:
+    esbuild "~0.27.0"
+  optionalDependencies:
+    fsevents "~2.3.3"
+
 type-is@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/type-is/-/type-is-2.0.1.tgz#64f6cf03f92fce4015c2b224793f6bdd4b068c97"
