@@ -26,7 +26,7 @@
     "express": "5.2.1",
     "graphql": "16.14.2",
     "graphql-helix": "1.13.0",
-    "sass": "1.100.0",
+    "sass": "1.101.0",
     "typescript": "6.0.3"
   },
   "devDependencies": {
